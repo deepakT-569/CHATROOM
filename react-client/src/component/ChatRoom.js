@@ -4,7 +4,7 @@ import SockJS from 'sockjs-client';
 
 var stompClient = null;
 const ChatRoom = () => {
-    const [publicChats, setPublicChats] = useState({});
+    const [publicChats, setPublicChats] = useState([]);
     const [privateChats, setPrivateChats] = useState(new Map());
     const [tab, setTab] = useState("CHATROOM");
     const [userData, setUserData] = useState({
